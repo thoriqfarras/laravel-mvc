@@ -3,7 +3,10 @@
 @section('container')  
   <link rel="stylesheet" href="{{ asset('css/floatingButton.css') }}">
   <div class="container mt-4">
-    <h1>Events</h1>
+    <header style="display: flex; justify-content: space-between">
+      <h1>Events</h1>
+      <a class="btn btn-success" style="height: fit-content;" href="/tambah-event">Tambah Event</a>
+    </header>
     @foreach ($events as $item)
       <div class="card mb-4">
         <div class="card-body">

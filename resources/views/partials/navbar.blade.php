@@ -9,12 +9,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/beranda">Beranda</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/tambah-event">Tambah Event</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/about">About</a>
-        </li>
     </div>
   </div>
 </nav>
