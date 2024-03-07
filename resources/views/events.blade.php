@@ -16,7 +16,7 @@
             <span>{{ $item["date"] }}</span>
           </div>
           <p class="card-text">{{ $item["description"] }}</p>
-          <a href="/beranda/{{ $item["slug"] }}" class="btn btn-primary">Lihat Detail</a>
+          <a href="/beranda/{{ $item["id"] }}" class="btn btn-primary">Lihat Detail</a>
         </div>
       </div>
     @endforeach

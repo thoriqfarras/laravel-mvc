@@ -14,7 +14,6 @@ class EventController extends Controller
       "events" => Events::all()
     ]);
   }
-
   public function show($slug)
   {
     $event = Events::find($slug);
