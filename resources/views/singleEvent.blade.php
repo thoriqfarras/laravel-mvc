@@ -12,7 +12,11 @@
       <span>{{ $event["dateTime"] }}</span>
     </div>
     <p>{{ $event["description"] }}</p>
-    <button type="button" class="btn btn-primary">Edit</button>
-    <button type="button" class="btn btn-danger">Delete</button>
+    <form action="/beranda/{{ $event->id }}" method="POST">
+      @method("DELETE")
+      @csrf
+      <a href="/beranda/{{ $event->id }}/edit" class="btn btn-primary">Edit</a>
+      <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
   </div>
 @endsection

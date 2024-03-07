@@ -22,3 +22,8 @@ Route::get('/', function () {
 Route::get('/beranda', [EventController::class, 'index']);
 Route::get('/beranda/{slug}', [EventController::class, 'show']);
 Route::get('/tambah-event', [EventController::class, 'formAdd']);
+Route::get('/beranda/{Event}/edit', [EventController::class, 'edit']);
+
+Route::post('/beranda', [EventController::class, 'store']);
+Route::delete('/beranda/{Event}', [EventController::class, 'destroy']);
+Route::put('/beranda/{Event}', [EventController::class, 'update']);
